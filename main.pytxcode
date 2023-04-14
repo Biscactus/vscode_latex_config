@@ -1,9 +1,9 @@
-=>PYTHONTEX#py#default#default#0#code#####80#
+=>PYTHONTEX#py#default#default#0#code#####106#
 x = 3 + 5
-=>PYTHONTEX#py#default#default#1#i#####84#
+=>PYTHONTEX#py#default#default#1#i#####110#
 x
 =>PYTHONTEX:SETTINGS#
-version=0.18
+version=0.17
 outputdir=pythontex-files-main
 workingdir=.
 workingdirset=false

@@ -1,7 +1,7 @@
-\babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {1}Théorie}{2}{section.1}%
-\contentsline {section}{\numberline {2}Protocole expérimental}{2}{section.2}%
-\contentsline {section}{\numberline {3}Mesures}{2}{section.3}%
-\contentsline {section}{\numberline {4}Analyse, commentaires, discussion}{2}{section.4}%
-\contentsline {section}{\numberline {5}Conclusion}{2}{section.5}%
-\contentsline {section}{\numberline {6}Quelques commandes}{2}{section.6}%
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Général}{2}{section.1}%
+\contentsline {section}{\numberline {2}Quelques commandes}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Image}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Équation}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Variables}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Python}{2}{subsection.2.4}%

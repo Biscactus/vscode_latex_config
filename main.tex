@@ -1,87 +1,115 @@
-\documentclass{rapport}
-\usepackage{lipsum}
-\usepackage{pythontex}
-\title{Rapport UCL - Template} %Titre du fichier
+\documentclass[a4paper,12pt]{article} % Classe du document
+%--------------------- Packages ------------------------
+
+\RequirePackage[french]{babel} %Langue du document
+\RequirePackage[utf8]{inputenc} %Caractères spéciaux
+\RequirePackage[section]{placeins}%Pour placement de section
+\RequirePackage[T1]{fontenc} %Quelques lettres qui sont pas inclus dans UTF-8
+\RequirePackage{mathtools} %Paquet pour des équations et symboles mathématiques
+\RequirePackage{siunitx} %Pour écrire avec la notation scientifique (Ex.: \num{2e+9})
+\RequirePackage{float} %Pour placement d'images
+\RequirePackage{graphicx} %Paquet pour insérer des images
+\RequirePackage[justification=centering]{caption} %Pour les légendes centralisées
+\RequirePackage{subcaption}
+\RequirePackage{wallpaper}
+\RequirePackage{nomencl}
+\makenomenclature
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyheadoffset{1cm}
+\setlength{\headheight}{2cm}
+\setlength{\parindent}{0cm} 
+\RequirePackage{url}
+\RequirePackage[hidelinks]{hyperref}%Paquet pour insérer légendes dans des sous-figures comme Figure 1a, 1b
+\RequirePackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3.5cm]{geometry} %Configuration de la page
+
+
+%-------------------- Informations sur le rapport ----------------------
+
+\newcommand{\nom}[1]{\renewcommand{\nom}{#1}}
+
+
+%------- Créer commande immage centralisée ---------------------------
+\newcommand{\insererfigure}[4]{
+\begin{figure}[H]
+\centering
+\includegraphics[height=#2]{#1}
+\caption{#3}
+\label{fig: #4}
+\end{figure}
+}
+
+\usepackage{pythontex}%pour utiliser python
 
 \begin{document}
 
 %----------- Informations du rapport ---------
 
-\unif{HEIG}
-\titre{Titre du rapport} %Titre du fichier .pdf
-\cours{Nom du cours} %Nom du cours
-\sujet{Sujet du rapport} %Nom du sujet
-
-\enseignant{Prénom \textsc{Nom}} %Nom de l'enseignant
-
-\eleves{\nom \\
-        Prénom \textsc{Nom} \\
-		Prénom \textsc{Nom} } %Nom des élèves
-
 \nom{Prénom NOM}
 
 %----------- Initialisation -------------------
-        
-\fairemarges %Afficher les marges
-\fairepagedegarde %Créer la page de garde
-\tabledematieres %Créer la table de matières
+  
+\lhead{\nom} %Header Left
+%\chead{} %Header center
+\rhead{\nouppercase{\today}} %Header right
+\rfoot{\thepage} %Footer right
+\cfoot{titre} %Footer center
+\lfoot{titre secondaire} %Footer left
+
+\begin{titlepage}
+    %créer la page de garde ici
+     \centering   
+        \vfill
+        {\large \today\par} %Affichage de la date
+    
+    \end{titlepage}
+\tableofcontents %Créer la table de matières
+\newpage 
 
 %------------ Corps du rapport ----------------
-
-
-\section{Théorie}
-
-%Effacer cette ligne et écrire le texte souhaité
-
-\section{Protocole expérimental}
-
-%Effacer cette ligne et écrire le texte souhaité
-
-\section{Mesures}
-
-%Effacer cette ligne et écrire le texte souhaité
-
-\section{Analyse, commentaires, discussion}
-
-%Effacer cette ligne et écrire le texte souhaité
-
-\section{Conclusion}
-
-%Effacer cette ligne et écrire le texte souhaité
+\section{Général}
+Il est possible de créer différente section qui seront mises à jour automatiquement
+dans la table des matières.
 
 %------------- Commandes utiles ----------------
 
 \section{Quelques commandes}
 
 Voici quelques commandes utiles :
-
+\subsection{Image}
 %------ Pour insérer et citer une image centralisée -----
 
-\insererfigure{logos/Import.jpg}{3cm}{Légende de la figure}{Label de la figure}
+\insererfigure{logos/cardBrushEx.jpg}{3cm}{Légende de la figure}{Label de la figure}
 % Le premier argument est le chemin pour la photo
 % Le deuxième est la hauteur de la photo
 % Le troisième la légende
 % Le quatrième le label
 Ici, je cite l'image \ref{fig: Label de la figure}
 
-
+\subsection{Équation}
 %------- Pour insérer et citer une équation --------------
 
 \begin{equation} \label{eq: exemple}
-\rho + \Delta = 42
+\Delta c = c \cdot \frac{\Delta g}{g}
 \end{equation}
 
 L'équation \ref{eq: exemple} est cité ici. 
 
+\subsection{Variables}
 % ------- Pour écrire des variables ----------------------
 
 Pour écrire des variables dans le texte, il suffit de mettre le symbole \$ entre le texte souhaité comme : constante $\rho$.
+
+\subsection{Python}
+% ------- Pour utiliser python ----------------------------
 
 \begin{pycode}
 x = 3 + 5
 \end{pycode}
        
-$x = \py{x}$
-       
+La valeur peut être récupérée dans le texte : $x = \py{x}$.\\
+Si la valeur affichée est ??, il suffit d'ouvrir le terminal et d'exécuter la 
+commande suivante puis recompiler le document :\\
+pythontex main.tex     
 
 \end{document}
