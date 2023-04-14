@@ -1,0 +1,87 @@
+\documentclass{rapport}
+\usepackage{lipsum}
+\usepackage{pythontex}
+\title{Rapport UCL - Template} %Titre du fichier
+
+\begin{document}
+
+%----------- Informations du rapport ---------
+
+\unif{HEIG}
+\titre{Titre du rapport} %Titre du fichier .pdf
+\cours{Nom du cours} %Nom du cours
+\sujet{Sujet du rapport} %Nom du sujet
+
+\enseignant{Prénom \textsc{Nom}} %Nom de l'enseignant
+
+\eleves{\nom \\
+        Prénom \textsc{Nom} \\
+		Prénom \textsc{Nom} } %Nom des élèves
+
+\nom{Prénom NOM}
+
+%----------- Initialisation -------------------
+        
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+\tabledematieres %Créer la table de matières
+
+%------------ Corps du rapport ----------------
+
+
+\section{Théorie}
+
+%Effacer cette ligne et écrire le texte souhaité
+
+\section{Protocole expérimental}
+
+%Effacer cette ligne et écrire le texte souhaité
+
+\section{Mesures}
+
+%Effacer cette ligne et écrire le texte souhaité
+
+\section{Analyse, commentaires, discussion}
+
+%Effacer cette ligne et écrire le texte souhaité
+
+\section{Conclusion}
+
+%Effacer cette ligne et écrire le texte souhaité
+
+%------------- Commandes utiles ----------------
+
+\section{Quelques commandes}
+
+Voici quelques commandes utiles :
+
+%------ Pour insérer et citer une image centralisée -----
+
+\insererfigure{logos/Import.jpg}{3cm}{Légende de la figure}{Label de la figure}
+% Le premier argument est le chemin pour la photo
+% Le deuxième est la hauteur de la photo
+% Le troisième la légende
+% Le quatrième le label
+Ici, je cite l'image \ref{fig: Label de la figure}
+
+
+%------- Pour insérer et citer une équation --------------
+
+\begin{equation} \label{eq: exemple}
+\rho + \Delta = 42
+\end{equation}
+
+L'équation \ref{eq: exemple} est cité ici. 
+
+% ------- Pour écrire des variables ----------------------
+
+Pour écrire des variables dans le texte, il suffit de mettre le symbole \$ entre le texte souhaité comme : constante $\rho$.
+
+\begin{pycode}
+x = 3 + 5
+\end{pycode}
+       
+$x = \py{x}$
+       
+
+\end{document}
