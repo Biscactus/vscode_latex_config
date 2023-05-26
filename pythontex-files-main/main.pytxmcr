@@ -1,5 +1,12 @@
-%Last time of file creation:  1681462565.7162948
+%Last time of file creation:  1685101921.5526648
 
 \pytx@SVMCR{pytx@MCR@py@default@default@1}
-4\endpytx@SVMCR
+3\endpytx@SVMCR
+
+\pytx@SVMCR{pytx@MCR@py@default@default@3}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$a_1$ & $b_{test}$ & $c$ & d & $e$  \\ \hline
+23 & 4.23 & 2.2 & 3 & 0.3456 $m/s^2$\\ \hline
+\end{tabular}\endpytx@SVMCR
 

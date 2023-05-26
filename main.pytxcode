@@ -1,7 +1,20 @@
-=>PYTHONTEX#py#default#default#0#code#####106#
-x = 1+10
-=>PYTHONTEX#py#default#default#1#i#####110#
+=>PYTHONTEX#py#default#default#0#code####commandes.tex#35#
+x = 3 #attention à l'indentation, il ne doit pas y avoir d'espaces avant la ligne
+=>PYTHONTEX#py#default#default#1#i####commandes.tex#39#
 x
+=>PYTHONTEX#py#default#default#2#code####comPy.tex#1#
+a = 23
+b=4.23
+c=2.2
+d=3
+e=0.3456
+tableau_calc = '\\begin{tabular}{|c|c|c|c|c|}\n'
+tableau_calc += '\\hline\n'
+tableau_calc += '$a_1$ & $b_{test}$ & $c$ & d & $e$  \\\\ \\hline\n'
+tableau_calc += f'{a} & {b} & {c} & {d} & {e} $m/s^2$\\\\ \\hline\n'
+tableau_calc += '\\end{tabular}\n'
+=>PYTHONTEX#py#default#default#3#i####commandes.tex#52#
+tableau_calc
 =>PYTHONTEX:SETTINGS#
 version=0.17
 outputdir=pythontex-files-main

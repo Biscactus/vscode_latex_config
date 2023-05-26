@@ -23,23 +23,11 @@
 \RequirePackage[hidelinks]{hyperref}%Paquet pour insérer légendes dans des sous-figures comme Figure 1a, 1b
 \RequirePackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3.5cm]{geometry} %Configuration de la page
 
+\usepackage{pythontex}%pour utiliser python
 
 %-------------------- Informations sur le rapport ----------------------
 
 \newcommand{\nom}[1]{\renewcommand{\nom}{#1}}
-
-
-%------- Créer commande immage centralisée ---------------------------
-\newcommand{\insererfigure}[4]{
-\begin{figure}[H]
-\centering
-\includegraphics[height=#2]{#1}
-\caption{#3}
-\label{fig: #4}
-\end{figure}
-}
-
-\usepackage{pythontex}%pour utiliser python
 
 \begin{document}
 
@@ -67,49 +55,6 @@
 \newpage 
 
 %------------ Corps du rapport ----------------
-\section{Général}
-Il est possible de créer différente section qui seront mises à jour automatiquement
-dans la table des matières.
-
-%------------- Commandes utiles ----------------
-
-\section{Quelques commandes}
-
-Voici quelques commandes utiles :
-\subsection{Image}
-%------ Pour insérer et citer une image centralisée -----
-
-\insererfigure{logos/cardBrushEx.jpg}{3cm}{Légende de la figure}{Label de la figure}
-% Le premier argument est le chemin pour la photo
-% Le deuxième est la hauteur de la photo
-% Le troisième la légende
-% Le quatrième le label
-Ici, je cite l'image \ref{fig: Label de la figure}
-
-\subsection{Équation}
-%------- Pour insérer et citer une équation --------------
-
-\begin{equation} \label{eq: exemple}
-\Delta c = c \cdot \frac{\Delta g}{g}
-\end{equation}
-
-L'équation \ref{eq: exemple} est cité ici. 
-
-\subsection{Variables}
-% ------- Pour écrire des variables ----------------------
-
-Pour écrire des variables dans le texte, il suffit de mettre le symbole \$ entre le texte souhaité comme : constante $\rho$.
-
-\subsection{Python}
-% ------- Pour utiliser python ----------------------------
-
-\begin{pycode}
-x = 1+10
-\end{pycode}
-       
-La valeur peut être récupérée dans le texte : $x = \py{x}$.\\
-Si la valeur affichée est ??, il suffit d'ouvrir le terminal et d'exécuter la 
-commande suivante puis recompiler le document :\\
-pythontex main.tex     
+\input{chapitres/commandes.tex}  %pour inclure un autre fichier .tex
 
 \end{document}
