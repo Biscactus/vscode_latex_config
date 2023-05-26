@@ -1,5 +1,5 @@
 =>PYTHONTEX#py#default#default#0#code#####106#
-x = 3 + 5
+x = 1+10
 =>PYTHONTEX#py#default#default#1#i#####110#
 x
 =>PYTHONTEX:SETTINGS#

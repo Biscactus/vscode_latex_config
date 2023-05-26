@@ -1,30 +1,6 @@
 {
     "latex-workshop.latex.tools": [
         {
-         "name": "latexmk",
-         "command": "latexmk",
-         "args": [
-          "-synctex=1",
-          "-interaction=nonstopmode",
-          "-file-line-error",
-          "-pdf",
-          "-outdir=%OUTDIR%",
-          "%DOC%"
-         ],
-         "env": {}
-        },
-        {
-         "name": "xelatex",
-         "command": "xelatex",
-         "args": [
-          "-synctex=1",
-          "-interaction=nonstopmode",
-          "-file-line-error",
-          "%DOC%"
-         ],
-         "env": {}
-        },
-        {
          "name": "pdflatex",
          "command": "pdflatex",
          "args": [
@@ -35,14 +11,7 @@
          ],
          "env": {}
         },
-        {
-         "name": "bibtex",
-         "command": "bibtex",
-         "args": [
-          "%DOCFILE%"
-         ],
-         "env": {}
-        },
+    
         {
             "name": "pythontex",
             "command": "pythontex",
@@ -52,58 +21,23 @@
             "env": {}
         },
        ],
-    "latex-workshop.latex.recipes": [
+       "latex-workshop.latex.recipes": [
         {
-            "name": "pdflatex",
-            "tools": [
-                "pdflatex"
-            ]
-        },
-        {
-         "name": "pdfLaTeX",
-         "tools": [
-          "pdflatex"
-         ]
-        },
-        {
-         "name": "latexmk 🔃",
-         "tools": [
-          "latexmk"
-         ]
-        },
-        {
-         "name": "xelatex",
-         "tools": [
-          "xelatex"
-         ]
-        },
-        {
-         "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
-         "tools": [
-          "pdflatex",
-          "bibtex",
-          "pdflatex",
-          "pdflatex"
-         ]
-        },
-        {
-        "name": "xelatex ➞ bibtex ➞ xelatex`×2",
-        "tools": [
-          "xelatex",
-          "bibtex",
-          "xelatex",
-          "xelatex"
-         ]
-        },
-        {
-            "name": "pdflatex -> pythontex -> pdflatex",
+            "name": "compile with pythontex enabled",
             "tools": [
                 "pdflatex",
                 "pythontex",
                 "pdflatex"
             ]
         },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
     ],
+
     "ltex.additionalRules.motherTongue": "fr",
     "ltex.additionalRules.languageModel": "fr",
     "ltex.language": "fr",
