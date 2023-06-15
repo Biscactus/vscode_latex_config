@@ -21,3 +21,8 @@ Il est possible qu'il faille aussi installer pygments pour que pythontex fonctio
 ```c
 pip install Pygments
 ```
+Si pip n'est pas intallé :
+```c
+sudo apt install python3-pip
+```
+Et refaire la commande pour installer pygments.
