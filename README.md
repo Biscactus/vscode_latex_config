@@ -1,5 +1,5 @@
 # Informations générales
-Ce repository est une introduction à latex dans vscode, séparée en plusieurs étapes :
+Ce repository est une introduction à latex dans vscode, séparée en plusieurs étapes (les détails se trouvent dans le dossier configuration) :
 1. Installer ubuntu
 2. Installer vscode
 3. Utiliser latex dans vscode
