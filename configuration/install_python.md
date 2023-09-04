@@ -26,3 +26,13 @@ Si pip n'est pas intallé :
 sudo apt install python3-pip
 ```
 Et refaire la commande pour installer pygments.
+
+Pour faire des graphiques dans python matplotlib et panda sont très utiles.
+Pour installer matplotlib effectuez la commande :
+```c
+python -m pip install -U matplotlib
+```
+Pour installer panda :
+```c
+pip install pandas
+```
