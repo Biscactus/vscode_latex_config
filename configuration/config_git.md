@@ -7,7 +7,7 @@
     - [Travailler en groupe](#travailler-en-groupe)
 
 ## Configuration de Git
-Pour configurer votre identité, exécutez depuis un terminal Ubuntu puis les commandes suivantes en remplaçant par vos nom et prénom et votre adresse email :
+Pour configurer votre identité, exécutez depuis un terminal Ubuntu les commandes suivantes en remplaçant par votre nom et votre prénom et votre adresse email :
 ```c
 git config --global user.name "Prénom Nom"
 git config --global user.email example@gmail.com
