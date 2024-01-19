@@ -4,3 +4,4 @@ Ce repository est une introduction à latex dans vscode, séparée en plusieurs 
 2. Install latex
 3. Install python
 4. Utiliser github pour travailler en groupe (à la fin de git config)
+5. Extensions utiles à installer sur vscode
