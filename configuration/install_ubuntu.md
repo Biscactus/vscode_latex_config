@@ -12,6 +12,10 @@ commande suivante dans le terminal :
 ```c
 wsl --install -d ubuntu
 ```
+Il est possible de préciser la version désirée de Ubuntu :
+```c
+wsl --install -d Ubuntu-24.04
+```
 Une fois l'installation terminée, pour que WSL et ubuntu fonctionne, il faut redémarrer le PC.
 
 ## Configuration d'ubuntu
